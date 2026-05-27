@@ -1,0 +1,101 @@
+---
+title: "Comprehensive<br>PhD documentation<br>with R and Quarto"
+author:
+  - name: "**Tina Rozsos**"
+    orcid: 0009-0008-5383-5497
+
+institute: "Vrije Universiteit Amsterdam"
+date: "2026"
+date-format: "[use**R!**] YYYY"
+format:
+  revealjs:
+    theme: [default, style.scss]
+    footer: "tinarozsos.github.io/user2026 | github.com/tinarozsos/phd-template"
+    transition: fade
+    background-transition: fade
+    controls: true
+    embed-resources: true
+    standalone: true
+    center: false
+    slide-number: false
+    overview: true
+    width: 1280
+    height: 720
+title-slide-attributes:
+    data-background-image: img/index.png
+    data-background-opacity: "0.6"
+    data-footer: false
+callout-icon: false
+callout-appearance: simple
+---
+
+
+## Why?
+
+- PhD: complex, long-term project
+- Need a structured framework to manage information
+- R: fun; Quarto: pretty
+
+## How?
+
+- lightweight Quarto website template:
+    - timeline, meeting notes, paper ideas, and more
+- pre-filled page & markdown chunk generation with custom R functions
+- reference management with BibTeX
+- compile locally or deploy online (e.g. GitHub Pages)
+
+## {background-iframe="https://tinarozsos.github.io/phd-template/" visibility="uncounted"}
+
+## Make it your own!
+
+. . .
+
+::: {.callout-warning}
+### Template at [github.com/tinarozsos/phd-template](https://github.com/tinarozsos/phd-template)
+:::
+<hr class="green">
+
+. . .
+
+::: {.callout-tip}
+### Customize it -- every person & project is different
+:::
+<hr class="blue">
+
+. . .
+
+::: {.callout-note}
+### Descriptive, not prescriptive
+:::
+<hr class="purple">
+
+<!-- ::: {.incremental}
+1. Template at [github.com/tinarozsos/phd-template](https://github.com/tinarozsos/phd-template)
+2. Customize it -- every person & project is different
+3. Descriptive, not prescriptive
+::: -->
+
+## Thank you!
+
+::: {.columns}
+::: {.column width="75%"}
+
+<p style="margin-bottom:1em;">Find me online:</p>
+
+[{{< iconify mynaui:globe >}} tinarozsos.github.io](https://tinarozsos.github.io){.red}
+
+[{{< iconify simple-icons:github >}} github.com/tinarozsos](https://github.com/tinarozsos){.yellow}
+
+[{{< iconify simple-icons:bluesky >}} @tinarozsos](https://bsky.app/profile/tinarozsos.bsky.social){.green}
+
+[{{< iconify mdi:linkedin >}} linkedin.com/in/tina-rozsos/](https://www.linkedin.com/in/tina-rozsos/){.blue}
+
+[{{< iconify mdi:email >}} t.d.rozsos@vu.nl](mailto:t.d.rozsos@vu.nl){.purple}
+
+:::
+::: {.column width="25%"}
+
+![](img/profile.jpg)
+
+:::
+:::

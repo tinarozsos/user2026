@@ -1,0 +1,121 @@
+/*-- scss:defaults --*/
+
+// https://quarto.org/docs/presentations/revealjs/themes.html#saas-variables
+// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+$headings-font-family: Delius, sans-serif !default;
+$font-family-sans-serif: Quicksand, sans-serif !default;
+$font-family-monospace: "Fira Mono", monospace;
+
+// Custom colors
+$theme-blue: #325d88;
+$theme-dark: #330036;
+$theme-mid: #2e97a1;
+$theme-highlight: #EC9192;
+
+// Rainbow
+$red: #FF4239;
+$orange: #FF6B00;
+$yellow: #FFC843;
+$green: #09CE7C;
+$blue: #02B3E3;
+$purple: #DA3AB3;
+
+// Dark rainbow
+$red20: #cc352e;
+$orange20: #cc5600;
+$yellow20: #cca036;
+$green20: #07a563;
+$blue20: #028fb6;
+$purple20: #b82d91;
+
+$body-color: $theme-dark;
+$presentation-heading-color: $theme-blue;
+$link-color: $theme-mid;
+$code-color: $theme-highlight;
+
+$callout-color-important: $red;
+$callout-color-caution: $yellow;
+$callout-color-warning: $green;
+$callout-color-tip: $blue;
+$callout-color-note: $purple;
+
+#title-slide .title {
+  display: inline-block;
+  color: $theme-dark;
+  font-size: 4rem;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  padding: 0.5em 0.25em 4em 0.25em;
+  margin-bottom: -3em;
+  background-color: rgba($theme-mid, 0.5);
+  border-radius: 5%;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 5rem !important;
+  font-family: $headings-font-family !important;
+  font-weight: 600;
+  padding-bottom: .25em;
+}
+
+a {
+  color: $link-color !important;
+  font-weight: 600 !important;
+}
+
+img {
+  border-radius: 25px;
+  border: 7px solid $theme-mid;
+}
+
+.callout.no-icon.callout-titled.callout-style-simple .callout-title {
+  font-size: 2.5rem;
+}
+
+.reveal .footer {
+  font-size: 0.7em !important;
+  font-weight: 550 !important;
+  color: $theme-mid !important;
+}
+
+// Create maps using color names
+$rainbow: (
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'blue': $blue,
+  'purple': $purple
+);
+$darkrainbow: (
+  'red': $red20,
+  'orange': $orange20,
+  'yellow': $yellow20,
+  'green': $green20,
+  'blue': $blue20,
+  'purple': $purple20
+);
+
+
+// hr with color
+@each $name, $color in $rainbow {
+  hr.#{$name} {
+    border: none;
+    border-top: 3px solid $color;
+    margin: -0.45em 0 1em 0;
+  }
+}
+
+@each $name,
+$color in $darkrainbow {
+  .#{$name} {
+    color: $color !important;
+  }
+}
