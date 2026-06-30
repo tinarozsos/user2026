@@ -1,8 +1,5 @@
 /*-- scss:defaults --*/
 
-// https://quarto.org/docs/presentations/revealjs/themes.html#saas-variables
-// https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
-
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
@@ -13,9 +10,8 @@ $font-family-monospace: "Fira Mono", monospace;
 
 // Custom colors
 $theme-blue: #325d88;
-$theme-dark: #330036;
+$theme-dark: #130014;
 $theme-mid: #2e97a1;
-$theme-highlight: #EC9192;
 
 // Rainbow
 $red: #FF4239;
@@ -36,13 +32,18 @@ $purple20: #b82d91;
 $body-color: $theme-dark;
 $presentation-heading-color: $theme-blue;
 $link-color: $theme-mid;
-$code-color: $theme-highlight;
+$code-color: $theme-mid;
+$code-block-border-color: $theme-blue;
 
 $callout-color-important: $red;
 $callout-color-caution: $yellow;
 $callout-color-warning: $green;
 $callout-color-tip: $blue;
 $callout-color-note: $purple;
+
+:root {
+  --theme-blue: #{$theme-blue};
+}
 
 #title-slide .title {
   display: inline-block;
@@ -52,10 +53,9 @@ $callout-color-note: $purple;
   font-weight: 600;
   padding: 0.5em 0.25em 4em 0.25em;
   margin-bottom: -3em;
-  background-color: rgba($theme-mid, 0.5);
+  background-color: rgba($theme-mid, 0.65);
   border-radius: 5%;
 }
-
 
 h2 {
   text-align: center;
@@ -85,6 +85,27 @@ img {
   color: $theme-mid !important;
 }
 
+.reveal .column {
+  vertical-align: middle;
+}
+
+.reveal pre code {
+  border-radius: 8px;
+}
+
+.outlined {
+  display: inline-block;
+  border: 4px double $theme-mid;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  border-radius: 8px;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Create maps using color names
 $rainbow: (
   'red': $red,
@@ -102,7 +123,6 @@ $darkrainbow: (
   'blue': $blue20,
   'purple': $purple20
 );
-
 
 // hr with color
 @each $name, $color in $rainbow {

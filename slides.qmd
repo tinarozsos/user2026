@@ -19,32 +19,85 @@ format:
     center: false
     slide-number: false
     overview: true
-    width: 1280
-    height: 720
+    code-line-numbers: false
+    width: 1050
+    height: 700
 title-slide-attributes:
     data-background-image: img/index.png
-    data-background-opacity: "0.6"
+    data-background-opacity: "0.5"
     data-footer: false
 callout-icon: false
 callout-appearance: simple
+execute:
+  eval: false
+filters:
+  - shapes
 ---
 
 
 ## Why?
 
-- PhD: complex, long-term project
-- Need a structured framework to manage information
-- R: fun; Quarto: pretty
+- **PhD:** a complex, long-term project
+- **Need:** a structured framework to manage information
+
+::: {.centered}
+[Quarto + R = perfect match]{.outlined}
+:::
+
+
 
 ## How?
 
-- lightweight Quarto website template:
-    - timeline, meeting notes, paper ideas, and more
-- pre-filled page & markdown chunk generation with custom R functions
-- reference management with BibTeX
-- compile locally or deploy online (e.g. GitHub Pages)
+Quarto website template with custom R functions
 
-## {background-iframe="https://tinarozsos.github.io/phd-template/" visibility="uncounted"}
+<!-- - timeline, meeting notes, paper ideas, and more -->
+<!-- - pre-filled page & markdown chunk generation with custom R functions -->
+
+::: {.columns}
+::: {.column width="35%" .fragment  fragment-index=1}
+::: {.centered}
+```r
+paper(file_name = NULL)
+```
+:::
+:::
+::: {.column width="15%" .fragment  fragment-index=2}
+::: {.centered}
+::: {.shape-arrow-striped fill="var(--theme-blue)" stroke="none" size="7rem"}
+:::
+:::
+:::
+::: {.column width="50%" .fragment  fragment-index=2}
+```markdown
+---
+title: ""
+author: "Your Name"
+status: "idea"
+bibliography: ../references.bib
+---
+
+# [Link to file]()
+<!-- e.g. GitHub -->
+
+# Abstract
+
+# Outline
+...
+```
+:::
+:::
+
+
+
+
+
+
+
+
+<!-- - reference management with BibTeX -->
+<!-- - compile locally or deploy online (e.g. GitHub Pages) -->
+
+## {background-iframe="https://tinarozsos.github.io/phd-template/"}
 
 ## Make it your own!
 
@@ -69,18 +122,12 @@ callout-appearance: simple
 :::
 <hr class="purple">
 
-<!-- ::: {.incremental}
-1. Template at [github.com/tinarozsos/phd-template](https://github.com/tinarozsos/phd-template)
-2. Customize it -- every person & project is different
-3. Descriptive, not prescriptive
-::: -->
-
 ## Thank you!
 
 ::: {.columns}
 ::: {.column width="75%"}
 
-<p style="margin-bottom:1em;">Find me online:</p>
+<p style="margin-bottom:1em;font-weight:600;">Find me online:</p>
 
 [{{< iconify mynaui:globe >}} tinarozsos.github.io](https://tinarozsos.github.io){.red}
 
