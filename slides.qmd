@@ -20,8 +20,8 @@ format:
     slide-number: false
     overview: true
     code-line-numbers: false
-    width: 1050
-    height: 700
+    width: 1280
+    height: 720
 title-slide-attributes:
     data-background-image: img/index.png
     data-background-opacity: "0.5"
@@ -54,14 +54,14 @@ Quarto website template with custom R functions
 <!-- - pre-filled page & markdown chunk generation with custom R functions -->
 
 ::: {.columns}
-::: {.column width="35%" .fragment  fragment-index=1}
+::: {.column width="30%" .fragment  fragment-index=1}
 ::: {.centered}
 ```r
 paper(file_name = NULL)
 ```
 :::
 :::
-::: {.column width="15%" .fragment  fragment-index=2}
+::: {.column width="20%" .fragment  fragment-index=2}
 ::: {.centered}
 ::: {.shape-arrow-striped fill="var(--theme-blue)" stroke="none" size="7rem"}
 :::
@@ -97,7 +97,8 @@ bibliography: ../references.bib
 <!-- - reference management with BibTeX -->
 <!-- - compile locally or deploy online (e.g. GitHub Pages) -->
 
-## {background-iframe="https://tinarozsos.github.io/phd-template/"}
+<!-- ## {background-image="img/index.png" background-size="contain" visibility="uncounted"} -->
+## {background-iframe="https://tinarozsos.github.io/phd-template/"  visibility="uncounted"}
 
 ## Make it your own!
 
